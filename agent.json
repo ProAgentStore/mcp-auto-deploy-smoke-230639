@@ -1,0 +1,15 @@
+{
+  "id": "mcp-auto-deploy-smoke-230639",
+  "name": "MCP Auto Deploy Smoke",
+  "description": "Smoke-test agent proving scaffold_agent can automatically trigger deployment.",
+  "storeType": "agent",
+  "category": "productivity",
+  "model": "@cf/meta/llama-3.2-3b-instruct",
+  "template": "worker",
+  "serverConfig": {
+    "durableObject": true,
+    "routes": [
+      "mcp-auto-deploy-smoke-230639.proagentstore.online/*"
+    ]
+  }
+}
